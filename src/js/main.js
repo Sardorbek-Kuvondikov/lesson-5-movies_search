@@ -71,6 +71,10 @@ elMovieResult.addEventListener("click", function (evt) {
             .slice(0, 80)
             .join(" ")} Lear More ...`
         : modallFind.summary;
+    elModalBtn.querySelector(
+      ".link"
+    ).href = `https://www.imdb.com/title/${modallFind.imdb_id}/`;
+    console.log(elModalBtn);
 
     elModalBtn.style.display = "block";
   }
